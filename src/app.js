@@ -11,7 +11,12 @@ mongoose.connect(process.env.MONGO_URI);
 
 app.use('/', routes);
 app.get('/', (req, res) => {
-  res.send('🚀 Crypto Reconciliation Engine is running! \n Check the Readme for API documentation: https://github.com/SUHAS-PULAPA/crypto-reconciliation-engine \n For API Testing use Postman collection: https://www.postman.com/');
+  // res.send('🚀 Crypto Reconciliation Engine is running! \n Check the Readme for API documentation: https://github.com/SUHAS-PULAPA/crypto-reconciliation-engine \n For API Testing use Postman collection: https://www.postman.com/');
+  res.send(
+  '🚀 Crypto Reconciliation Engine is running!\n' +
+  'Check the Readme for API documentation: https://github.com/SUHAS-PULAPA/crypto-reconciliation-engine\n' +
+  'For API Testing use Postman collection: https://www.postman.com/'
+);
 });
 
 module.exports = app;
